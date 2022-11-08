@@ -13,7 +13,16 @@ The volume of the box is: 70
 
 */
 
-function 
+function calculate($width, $height, $depth) {
+
+    $area = $width * $height;
+    $volume = $width * $height * $depth;
+
+    return "The area of the box is ".$area."<br>".
+    "The volume of the box is ".$volume;
+}
+
+$returnOutput = calculate(5,7,3);
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +34,10 @@ function
     <title>Document</title>
 </head>
 <body>
-    
+
+<?php 
+echo "<pre>".$returnOutput."</pre>";
+?>
+
 </body>
 </html>
